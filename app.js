@@ -78,7 +78,7 @@ app.use(async (ctx, next) => {
 const Ngnix = Proxy.proxy({
     proxies: [
         {
-            upstreams: [{uri: 'http://127.0.0.1:3100'}, {uri: 'http://127.0.0.1:3101'}],
+            upstreams: [{uri: 'http://10.4.96.4:3100'}, {uri: 'http://10.4.96.4:3101'}],
             context: '',
             enablelog: false,
             proxyTimeout: 10000,
