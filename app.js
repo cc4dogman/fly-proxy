@@ -11,12 +11,12 @@ const xssInjection = require("./module/security/xss");
 const app = new Koa();
 
 //1.注入security headers，简单进行防御
-// app.use(helmet());
+app.use(helmet());
 //2.body 解析 后面会用到
-// app.use(bodyParser());
+app.use(bodyParser());
 //3.对其他安全进行防护
-// app.use(sqlInjection());
-// app.use(xssInjection());
+app.use(sqlInjection());
+app.use(xssInjection());
 
 // logger
 app.use(async (ctx, next) => {
