@@ -14,6 +14,6 @@
     "koa-bodyparser": "^4.2.1",
     "koa-helmet": "^4.0.0",
     "koa-ratelimit": "^4.1.2",
-    "fly-proxy-nginx":"^1.0.1"
+    "fly-proxy-nginx":"^1.0.2"
   }
 }
